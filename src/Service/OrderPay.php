@@ -39,4 +39,21 @@ class OrderPay extends CommonService {
 
         return $this->response($response);
     }
+
+    /**
+     * 获得可用的支付渠道
+     *
+     * @return array
+     */
+    public function getChannels() {
+        $url = 'order/get_channel';
+
+        $query = $this->buildParam([]);
+
+        $response = Http::withOptions([
+            "verify" => false,
+        ])->post($this->service_url . $url, $query);
+
+        return $this->response($response);
+    }
 }
