@@ -1,0 +1,12 @@
+{
+    "name": "zhpefe/common-service",
+    "description": "CommonService",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Perfe",
+            "email": "zhpefe789@gmail.com"
+        }
+    ],
+    "require": {}
+}
