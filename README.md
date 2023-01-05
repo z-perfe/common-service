@@ -2,7 +2,7 @@
 ### 安装
 > 适用于 laravel PHP 7.4+
 
-> composer require zhpefe/common-service
+> composer require z-perfe/common-service
 ### 发布配置文件
 > php artisan vendor:publish --tag=common_service
 
