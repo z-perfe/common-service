@@ -1,5 +1,5 @@
 <?php
-namespace Zprefe\CommonService;
+namespace Zperfe\CommonService;
 
 use Illuminate\Support\ServiceProvider;
 
