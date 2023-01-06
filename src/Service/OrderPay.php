@@ -18,7 +18,8 @@ class OrderPay extends CommonService {
      * @param array $attach 其他参数,会随支付结果下发给应用.
      * @return array
      */
-    public function pay(int|string $channel_id, string $app_trade_no, string $description, int $amount_total, array $params = [], string $amount_currency = 'THB', array $attach = []) {
+    public function pay($channel_id, string $app_trade_no, string $description, int $amount_total, array $params = [], string $amount_currency = 'THB', array $attach = []) {
+
         $url = 'order/create';
 
         $query = [
