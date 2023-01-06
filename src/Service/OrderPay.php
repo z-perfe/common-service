@@ -1,8 +1,8 @@
 <?php
-namespace Zperfe\CommonService\Service;
+namespace Zperfe\Common\Service;
 
 use Illuminate\Support\Facades\Http;
-use Zperfe\CommonService\CommonService;
+use Zperfe\Common\CommonService;
 
 class OrderPay extends CommonService {
     

@@ -1,5 +1,5 @@
 <?php
-namespace Zperfe\CommonService;
+namespace Zperfe\Common;
 
 class CommonService {
 

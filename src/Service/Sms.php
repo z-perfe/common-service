@@ -1,8 +1,8 @@
 <?php
-namespace Zhpefe\CommonService\Service;
+namespace Zperfe\Common\Service;
 
 use Illuminate\Support\Facades\Http;
-use Zhpefe\CommonService\CommonService;
+use Zperfe\Common\CommonService;
 
 class Sms extends CommonService {
     

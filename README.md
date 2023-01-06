@@ -10,7 +10,7 @@
 
 ## 短信服务
 ```
-use Zperfe\CommonService\Service\Sms;
+use Zperfe\Common\Service\Sms;
 
 $sms = new Sms();
 
@@ -29,7 +29,7 @@ $sms->getAction();
 *************
 ## 支付服务
 ```
-use Zperfe\CommonService\Service\OrderPay;
+use Zperfe\Common\Service\OrderPay;
 
 $pay = new OrderPay();
 
@@ -95,7 +95,7 @@ $pay->getChannels();
 *************
 ## 支付通知的校验方法
 ```
-use Zperfe\CommonService\Service\OrderPay;
+use Zperfe\Common\Service\OrderPay;
 
 $input = $request->all();
 $pay = new OrderPay();
