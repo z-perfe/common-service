@@ -108,3 +108,32 @@ if ($pay->verifySign($input)) {
     }
 }
 ```
+
+## 文件服务
+### 文件会重新命名
+```
+use Zperfe\Common\Service\UploadFile;
+
+$upload = new UploadFile();
+
+$file = $request->file('file');
+$response = $upload->putFile($file, $path='');
+```
+`` $upload->putFile 参数说明 ``
+|参数名|类型|必传|说明|
+|:---:|:---|:---|:---|
+|file|object|是|Illuminate\Http\UploadedFile 实例|
+|path|string|否|路径名称,如此文件已存在,则此参数会忽略|
+*************
+
+``` 
+成功的响应 
+{
+    "status": 1,
+    "message": "SUCCESS",
+    "data": {
+        "file": "20230116154453_41591.jpg",
+        "full_file": "https://img1.ortmg.com/20230116154453_41591.jpg"
+    }
+}
+```
